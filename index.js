@@ -5,7 +5,7 @@ import mongoose from "mongoose"
 
 
 const app = express()
-//Deafault port number
+//Default port number
 const port = 3000
 
 app.use(express.static("public"))
