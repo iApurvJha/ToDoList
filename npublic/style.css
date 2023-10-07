@@ -1,0 +1,116 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  header {
+    height: 12vh;
+    display: flex;
+    justify-content: left;
+    padding-top: 1.5vw;
+    padding-left: 2vw;
+    
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .date{
+    display: flex;
+    width: 25vw;
+    height: 9vh;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(173,44,232,0.42629551820728295) 0%, rgba(120,171,209,1) 100%);
+    margin-bottom: 5vh;
+    border-radius: 0.5vw;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+  }
+  
+  .first-container{
+    height: 9vh;
+    width: 25vw;
+    display: flex;
+    justify-content: left;
+    align-items: center; 
+    background-color: white;
+    border-top-right-radius: 1vw;
+    border-top-left-radius: 1vw;
+    border-bottom: 0.5px solid whitesmoke;
+  }
+  .container{
+    height: 9vh;
+    width: 25vw;
+    display: flex;
+    justify-content: left;
+    align-items: center; 
+    background-color: white;
+    border-bottom: 0.5px solid whitesmoke;
+  
+  }
+  
+  body{
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(239,239,239,0.42629551820728295) 0%, rgba(183,222,251,1) 100%);
+  }
+  #addTask{
+    text-align: center;
+    font-size: larger;
+    border: none;
+  }
+  #taskButton{
+    border: none;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(173,44,232,0.42629551820728295) 0%, rgba(120,171,209,1) 100%);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+  }
+  input:focus {
+    outline: none;
+  }
+  
+  
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+  }
+  .addTask{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrangement{
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  .delete_button{
+    height: 1.5rem;
+    width: 4rem;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: white;
+  }
+  input:checked+span {
+    /* CSS rules for styling the <p> element when the checkbox is checked */
+    text-decoration: line-through;
+    color: red;
+  }
+  
+  img {
+    height: 2vw;
+    width: 2vw;
+  }
+  #plus_symbol{
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
