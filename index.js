@@ -8,7 +8,7 @@ const app = express()
 //Default port number
 const port = 3000
 
-app.use(express.static("public"))
+app.use(express.static("npublic"))
 app.use(bodyParser.urlencoded({
   extended: true
 }))
