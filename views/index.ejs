@@ -1,0 +1,43 @@
+<%- include("partials/header.ejs") %>
+
+<main>
+    <div class="date">
+        <span><%= day %>,</span>
+        <span><%=month %></span>
+        <span>&nbsp;<%= new Date().getDate() %></span>
+    </div>
+    <% if(data.length===0){ %>
+        <script>
+            window.location.reload();
+          </script>
+    <% }else {%>
+        <div class="box">
+            <div class="first-container">
+                <!-- <input  class="arrangement" type="checkbox">
+                    <span class="arrangement"><%= data[0].name %></span> -->
+                <form action="/delete" method="POST">
+                    <input onChange="this.form.submit()" class="arrangement" type="checkbox" name="itemId"
+                        value="<%= data[0]._id %>">
+                    <span class="arrangement "><%= data[0].name %></span>
+                </form>
+            </div>
+            <% for(var i =1;i<data.length;i++){ %>
+            <div class="container">
+                <form action="/delete" method="POST">
+                    <input onChange="this.form.submit()" class="arrangement" type="checkbox" name="itemId"
+                        value="<%= data[i]._id %>">
+                    <span class="arrangement "><%= data[i].name %></span>
+                </form>
+            </div>
+
+        <% } %>
+    </div>
+        <% } %>
+    <div class="container addTask">
+        <form method="POST" action="/add">
+            <input id="addTask" type="text" name="task" placeholder="Enter your task">
+            <button id="taskButton" type="submit" name="submit" value="Submitted"><img id="plus_symbol" src="plus.png"
+                    alt="plusSymbol"></button>
+        </form>
+</main>
+<%- include("partials/footer.ejs") %>
