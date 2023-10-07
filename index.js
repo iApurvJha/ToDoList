@@ -3,7 +3,9 @@ import express from "express"
 import bodyParser from "body-parser"
 import mongoose from "mongoose"
 
+
 const app = express()
+//Deafault port number
 const port = 3000
 
 app.use(express.static("public"))
